@@ -15,7 +15,7 @@ var life = document.getElementById("life");
 let level = 1
 const epilog = `Selamat datang Warrior!               
 Uji keberuntunganmu pada tebasan terakhir melawan BOSS             `;
-const speed = 100;
+const speed = 80;
 
 function attack(level) {
    let critical = Math.floor(Math.random() * 5)  
