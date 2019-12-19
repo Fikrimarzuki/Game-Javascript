@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Attack Wars</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class = "container">
+         <div class = "main">
+            
+            <div id = "mainEnd">
+               <p id = "story"></p>
+               <div id = "storyBeginId" class = "storyBegin">   
+                  <img class = "imageBegin" src="images/start.png" />
+                     <div class = "begin">
+                        <button onclick= "tellStory()" class = "buttonBegin">- New Game -</button>   
+                     </div>
+               </div>
+            </div>
+            
+            <div id="game" class = "hide">
+               <form >
+                  <label>Write your name:</label><br>
+                  <input type="text" id="hero" name="heroName" autofocus required><br><br><br>
+                  <label>Choose your Job:</label><br><br>
+                  <input type="radio" id="job" name="job" value="magician"> Magician<br>
+                  <input type="radio" id="job2" name="job" value="swordman"> Swordman<br><br>
+                  <!--
+                  <label>Choose your level</label><br>
+                  <select id="mySelect" onchange="selectLevel()">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                     <option value="uncontrolled">uncontrolled</option>
+                  </select>
+                  -->
+               </form>
+               <button onclick = "heroName()" id = "buttonStart">Start Game</button>
+            </div>
+                        
+            <div id= "game2" class= "hide2" >
+               <p id = "yourHeroName"></p>
+               <p id = "yourHeroJob"></p>
+               <div class="progress">
+                  <div class="progress-bar" id="life" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+               <div id="swordman" class="hide2">
+                  <img src="images/swordman.png" />
+                  <div id="fightSword">
+                     <button class="buttonFight" onclick="fightAttack()">Fight</button>
+                  </div>
+                  <div id="fight" class="hide2">
+                     <button src="images/attack.png" class="buttonOptionFight" onclick="attackAttack(level)">Attack</button>
+                  </div>
+                  <div id="exitFight" class="hide">
+                     <button id="buttonHome" type="text" onclick="home()">Play Again</button>
+                     <button class="buttonExit" onclick="exit()">Exit</button>
+                  </div>
+                  <button id="giveUp" class="buttonGiveUp" onclick="giveUp()">Give Up</button>
+               </div>
+               <div id="magician" class="hide2">
+                  <img src="images/magician.png" />
+                  <div id="spellMagic">
+                     <button class="buttonFight" onclick="spellAttack()">Spell</button>
+                  </div>
+                  <div id="spell" class="hide2">
+                     <button src="images/firebolt.png" class="buttonOptionFight" onclick="attackMagic()">Firebolt</button>
+                     <button src="images/poisonRain" class="buttonOptionFight" onclick="attackMagic()">Poison Rain</button>
+                  </div>
+                  <button class="buttonGiveUp" onclick="giveUp()">Give Up</button>
+               </div>
+            </div>
+            <div id="gameOver" class="hide2">
+               <img src="images/gameOver.png" />
+               <button class="buttonHome" type="text" onclick="home()">Play Again</button>
+               <button class="buttonExit" type="submit" onclick="exit()">Exit</button>
+            </div>
+            <div id="underConstruction" class="hide">
+               <img src="images/underConstruction.png" />
+               <button class="buttonHome" type="text" onclick="home()">Play Again</button>
+               <button class="buttonExit" type="submit" onclick="exit()">Exit</button>
+            </div>
+         </div>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>

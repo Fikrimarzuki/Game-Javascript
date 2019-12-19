@@ -1,0 +1,157 @@
+* {
+   padding: 0;
+   margin: 0
+}
+
+body {
+   background-color: black
+}
+
+.container {
+   margin: auto;
+   margin-top: 10px;
+   padding: 5%;
+   background-color: black;
+}
+
+.main {
+   margin: 0 auto;
+   padding-top: 50px;
+   border: 1px solid black;
+   background-color: white;
+   height : 70vh;
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+   text-align: center;
+}
+
+.imageBegin {
+   margin: 10px 180px;
+}
+
+.begin {
+   margin-top: 60px
+}
+
+.buttonBegin {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+
+.buttonBegin:hover {
+   background-color: rgb(42, 108, 146);
+}
+
+#buttonStart {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   margin-top: 15px;
+   padding: 10px 30px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+
+#buttonStart:hover {
+   background-color: rgb(42, 108, 146);
+}
+
+.hide {
+   display: none
+}
+
+.hide2 {
+   display: none
+}
+
+.show {
+   display: block
+}
+
+.startGame {
+   display: block;
+   color: black
+}
+
+.buttonFight {
+   background-color: rgb(50, 106, 209);
+   border: none;
+   border-radius: 1px;
+   color: white;
+   margin-top: 15px;
+   padding: 10px 30px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+
+.buttonFight:hover {
+   background-color: #4CAF50;
+   color:black
+}
+
+.buttonGiveUp {
+   background-color: rgb(185, 28, 28);
+   border: none;
+   border-radius: 1px;
+   color: white;
+   margin-top: 15px;
+   padding: 10px 30px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
+
+.buttonGiveUp:hover {
+   background-color: black;
+   color:white;
+}
+
+.buttonHome {
+   background-color: rgb(10, 43, 104);
+   color:white;
+   border: none;
+   border-radius: 1px;
+   margin-top: 15px;
+   padding: 10px 30px;
+   text-align: right;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+}
+
+.buttonHome:hover {
+   background-color: rgb(16, 67, 163)
+}
+
+.buttonExit {
+   background-color: rgb(185, 28, 28);
+   color:white;
+   border: none;
+   border-radius: 1px;
+   margin-top: 15px;
+   padding: 10px 30px;
+   text-align: right;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+}
+
+.buttonExit:hover {
+   background-color: rgb(236, 39, 39);
+}
+
+#gameOver img {
+   margin-bottom: 22vh
+}
